@@ -1,0 +1,233 @@
+/* salud.css */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #E3001B;
+    --text-color: #333333;
+    --background-color: #b9d6f1;
+    --white: #FFFFFF;
+    --health-green: #4CAF50;
+    --health-light: #E8F5E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.brand-logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-svg {
+    width: 400px;
+    height: auto;
+    margin: 5px 0;
+}
+
+nav {
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: #002855;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.salud {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.salud h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro-salud {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 2rem;
+    background: var(--health-light);
+    border-radius: 15px;
+    border-left: 5px solid var(--health-green);
+}
+
+.productos-salud-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.producto-salud {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.producto-salud:hover {
+    transform: translateY(-5px);
+}
+
+.producto-salud img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.producto-salud h2 {
+    color: var(--primary-color);
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.8rem;
+}
+
+.producto-salud p {
+    padding: 0.5rem 1.5rem;
+    color: var(--text-color);
+}
+
+.beneficios {
+    padding: 1.5rem;
+    background: var(--health-light);
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.beneficios li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.beneficios li::before {
+    content: "✓";
+    color: var(--health-green);
+    font-weight: bold;
+}
+
+.precio {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 1rem;
+    background: var(--health-light);
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.info-nutricional {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+}
+
+.info-nutricional h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.btn-info {
+    display: block;
+    background-color: var(--health-green);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .productos-salud-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-svg {
+        width: 300px;
+    }
+}
