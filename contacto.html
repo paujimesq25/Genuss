@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENUSS - Contacto</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Nuestros estilos -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+    <header>
+        <div class="brand-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" class="logo-svg">
+                <ellipse cx="150" cy="75" rx="140" ry="60" fill="#E3001B"/>
+                <ellipse cx="150" cy="75" rx="130" ry="50" fill="#FFFFFF"/>
+                <text x="150" y="90" 
+                      text-anchor="middle" 
+                      fill="#003366" 
+                      font-family="Montserrat, Arial, sans-serif" 
+                      font-weight="bold" 
+                      font-size="48">GENUSS</text>
+            </svg>
+        </div>
+
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li>
+                    <a href="conozcanos.html">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        <span>Conózcanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="productos.html">
+                        <span class="fas fa-bread-slice" aria-hidden="true"></span>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <span class="fas fa-graduation-cap" aria-hidden="true"></span>
+                        <span>Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recetas.html">
+                        <span class="fas fa-book-open" aria-hidden="true"></span>
+                        <span>Recetas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="salud.html">
+                        <span class="fas fa-heart" aria-hidden="true"></span>
+                        <span>Línea Salud</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pedidos.html">
+                        <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="resenas.html">
+                        <span class="fas fa-star" aria-hidden="true"></span>
+                        <span>Reseñas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="fas fa-envelope" aria-hidden="true"></span>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h1><i class="fas fa-envelope"></i> Contacto</h1>
+            <div class="contacto-grid">
+                <div class="info-contacto">
+                    <h2><i class="fas fa-info-circle"></i> Información de Contacto</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Calle Principal 123, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@genuss.com</p>
+                    <p><i class="fas fa-clock"></i> <strong>Horario:</strong></p>
+                    <p>Lunes a Viernes: 7:00 - 20:00</p>
+                    <p>Sábados y Domingos: 8:00 - 18:00</p>
+                    <img src="Imagen/Wolftal_Bäcker_Leist-1024x693.jpg" alt="Nuestro local" class="imagen-local">
+                </div>
+
+                <div class="formulario-contacto">
+                    <h2><i class="fas fa-paper-plane"></i> Envíanos un Mensaje</h2>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre-contacto"><i class="fas fa-user"></i> Nombre:</label>
+                            <input type="text" id="nombre-contacto" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-contacto"><i class="fas fa-envelope"></i> Email:</label>
+                            <input type="email" id="email-contacto" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto"><i class="fas fa-heading"></i> Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GENUSS. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

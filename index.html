@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GENUSS - Panadería alemana auténtica">
+    <title>GENUSS - Panadería Alemana</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header role="banner">
+        <div class="brand-logo">
+            <a href="index.html" aria-label="GENUSS - Página principal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="logo-svg" role="img" aria-label="Logo GENUSS">
+                    <ellipse cx="400" cy="200" rx="360" ry="160" fill="#E3001B"/>
+                    <ellipse cx="400" cy="200" rx="340" ry="140" fill="#FFFFFF"/>
+                    <text x="400" y="200" 
+                          text-anchor="middle" 
+                          dominant-baseline="central"
+                          alignment-baseline="central"
+                          fill="#003366" 
+                          font-family="Montserrat, Arial, sans-serif" 
+                          font-weight="bold" 
+                          font-size="144">GENUSS</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li>
+                    <a href="conozcanos.html">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        <span>Conózcanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="productos.html">
+                        <span class="fas fa-bread-slice" aria-hidden="true"></span>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <span class="fas fa-graduation-cap" aria-hidden="true"></span>
+                        <span>Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recetas.html">
+                        <span class="fas fa-book-open" aria-hidden="true"></span>
+                        <span>Recetas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="salud.html">
+                        <span class="fas fa-heart" aria-hidden="true"></span>
+                        <span>Línea Salud</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pedidos.html">
+                        <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="resenas.html">
+                        <span class="fas fa-star" aria-hidden="true"></span>
+                        <span>Reseñas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="fas fa-envelope" aria-hidden="true"></span>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Bienvenidos a GENUSS</h1>
+            <p class="hero-text">Descubre el auténtico sabor de la panadería alemana</p>
+            <figure class="hero-image">
+                <img src="Imagen/braten.jpg" alt="Vista exterior de la panadería GENUSS" width="1200" height="600">
+                <figcaption class="visually-hidden">Fachada de nuestra panadería</figcaption>
+            </figure>
+        </section>
+
+        <section class="destacados" aria-labelledby="productos-destacados">
+            <h2 id="productos-destacados">
+                <span class="fas fa-crown" aria-hidden="true"></span>
+                Productos Destacados
+            </h2>
+            <div class="productos-grid">
+                <article class="producto">
+                    <img src="Imagen/bretzel con cerveza.jpg" alt="Bretzel tradicional alemán recién horneado" width="300" height="300">
+                    <h3>Bretzel Tradicional</h3>
+                    <p>Nuestro clásico bretzel alemán, horneado diariamente.</p>
+                </article>
+                <article class="producto">
+                    <img src="Imagen/Stollen.jpg" alt="Pan dulce Stollen con frutas confitadas" width="300" height="300">
+                    <h3>Stollen</h3>
+                    <p>Pan dulce tradicional con frutas y especias.</p>
+                </article>
+                <article class="producto">
+                    <img src="Imagen/cafe.jpg" alt="Taza de café alemán recién preparado" width="300" height="300">
+                    <h3>Café Alemán</h3>
+                    <p>El mejor café preparado al estilo alemán.</p>
+                </article>
+                <article class="producto">
+                    <img src="Imagen/queque de cereza.jpg" alt="Pastel artesanal decorado con cerezas frescas" width="300" height="300">
+                    <h3>Pasteles Artesanales</h3>
+                    <p>Deliciosos pasteles tradicionales.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="enlaces-directos" aria-label="Enlaces rápidos">
+            <div class="enlaces-grid">
+                <article class="enlace-item">
+                    <span class="fas fa-book-open fa-2x" aria-hidden="true"></span>
+                    <img src="Imagen/pvMKap.jpg" alt="Libro de recetas tradicionales alemanas" width="400" height="300">
+                    <h3>Recetas</h3>
+                    <a href="recetas.html" class="boton-enlace">Ver Recetas</a>
+                </article>
+                <article class="enlace-item">
+                    <span class="fas fa-heart fa-2x" aria-hidden="true"></span>
+                    <img src="Imagen/Rote-Gruetze-4.jpg" alt="Productos saludables de nuestra línea especial" width="400" height="300">
+                    <h3>Línea salud</h3>
+                    <a href="salud.html" class="boton-enlace">Ver Productos</a>
+                </article>
+                <article class="enlace-item">
+                    <span class="fas fa-graduation-cap fa-2x" aria-hidden="true"></span>
+                    <img src="Imagen/cursos.jpg" alt="Curso de panadería alemana en acción" width="400" height="300">
+                    <h3>Cursos</h3>
+                    <a href="cursos.html" class="boton-enlace">Ver Cursos</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="horario" aria-labelledby="horario-titulo">
+            <h2 id="horario-titulo">
+                <span class="far fa-clock" aria-hidden="true"></span>
+                Horario de Atención
+            </h2>
+            <div class="horario-grid">
+                <div class="horario-item">
+                    <h3>
+                        <span class="fas fa-sun" aria-hidden="true"></span>
+                        Lunes a Viernes
+                    </h3>
+                    <time datetime="07:00">7:00</time> - <time datetime="20:00">20:00</time>
+                </div>
+                <div class="horario-item">
+                    <h3>
+                        <span class="fas fa-moon" aria-hidden="true"></span>
+                        Sábados y Domingos
+                    </h3>
+                    <time datetime="08:00">8:00</time> - <time datetime="18:00">18:00</time>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>
+            <small>&copy; 2025 GENUSS. Todos los derechos reservados.</small>
+        </p>
+    </footer>
+</body>
+</html>

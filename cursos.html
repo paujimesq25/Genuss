@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENUSS - Cursos de Panadería Alemana</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Base y Estilos -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cursos.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header role="banner">
+        <div class="brand-logo">
+            <a href="index.html" aria-label="GENUSS - Página principal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="logo-svg" role="img" aria-label="Logo GENUSS">
+                    <ellipse cx="400" cy="200" rx="360" ry="160" fill="#E3001B"/>
+                    <ellipse cx="400" cy="200" rx="340" ry="140" fill="#FFFFFF"/>
+                    <text x="400" y="200" 
+                          text-anchor="middle" 
+                          dominant-baseline="central"
+                          alignment-baseline="central"
+                          fill="#003366" 
+                          font-family="Montserrat, Arial, sans-serif" 
+                          font-weight="bold" 
+                          font-size="144">GENUSS</text>
+                </svg>
+            </a>
+        </div>
+        
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li>
+                    <a href="conozcanos.html">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        <span>Conózcanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="productos.html">
+                        <span class="fas fa-bread-slice" aria-hidden="true"></span>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <span class="fas fa-graduation-cap" aria-hidden="true"></span>
+                        <span>Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recetas.html">
+                        <span class="fas fa-book-open" aria-hidden="true"></span>
+                        <span>Recetas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="salud.html">
+                        <span class="fas fa-heart" aria-hidden="true"></span>
+                        <span>Línea Salud</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pedidos.html">
+                        <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="resenas.html">
+                        <span class="fas fa-star" aria-hidden="true"></span>
+                        <span>Reseñas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="fas fa-envelope" aria-hidden="true"></span>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main" class="py-5">
+        <!-- Resto del contenido main sin cambios -->
+        <div class="container">
+            <h1 class="text-center mb-5">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                Academia de Panadería Alemana
+            </h1>
+
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <p class="lead">Descubre el arte de la panadería alemana con nuestros cursos especializados. 
+                    Aprende técnicas tradicionales y modernas de la mano de maestros panaderos expertos.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Curso Básico de Panadería -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100">
+                        <div class="certificacion-badge">
+                            <i class="fas fa-certificate text-warning"></i>
+                        </div>
+                        <img src="Imagen/cursos.jpg" class="card-img-top" alt="Curso Básico de Panadería">
+                        <div class="card-body">
+                            <span class="badge nivel-principiante mb-2">Nivel Principiante</span>
+                            <h2 class="card-title">
+                                <i class="fas fa-bread-slice me-2"></i>
+                                Fundamentos de Panadería
+                            </h2>
+                            <p class="card-text">Curso introductorio al mundo de la panadería alemana. 
+                            Aprenderás las técnicas básicas y los principios fundamentales.</p>
+                            
+                            <div class="detalles-curso">
+                                <div class="requisito-curso">
+                                    <i class="far fa-clock"></i>
+                                    <span>Duración: 16 horas (4 sesiones)</span>
+                                </div>
+                                <div class="requisito-curso">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>No requiere experiencia previa</span>
+                                </div>
+                                <div class="requisito-curso">
+                                    <i class="fas fa-users"></i>
+                                    <span>Grupos reducidos (máx. 8 personas)</span>
+                                </div>
+                            </div>
+
+                            <div class="precio-curso text-center mb-3">
+                                <span class="fs-3 fw-bold">25000 colones</span>
+                                <span class="text-muted">/curso completo</span>
+                            </div>
+
+                            <button class="btn btn-genuss w-100">
+                                <i class="fas fa-sign-in-alt me-2"></i>
+                                Inscribirse
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Los otros dos cursos permanecen igual... -->
+                <!-- Curso Avanzado de Panes Especiales -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Contenido igual... -->
+                </div>
+
+                <!-- Curso de Repostería Alemana -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Contenido igual... -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Información adicional -->
+        <div class="container mt-5">
+            <!-- Contenido igual... -->
+        </div>
+    </main>
+
+    <footer role="contentinfo" class="mt-5 py-3">
+        <div class="container text-center">
+            <p class="mb-0"><small>&copy; 2025 GENUSS - Academia de Panadería Alemana. Todos los derechos reservados.</small></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle con Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

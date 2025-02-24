@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENUSS - Reseñas</title>
+    <link rel="stylesheet" href="CSS/resenas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header role="banner" class="header">
+            <div class="brand-logo">
+                <a href="index.html" aria-label="GENUSS - Página principal">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="logo-svg" role="img" aria-label="Logo GENUSS">
+                        <ellipse cx="400" cy="200" rx="360" ry="160" fill="#E3001B"/>
+                        <ellipse cx="400" cy="200" rx="340" ry="140" fill="#FFFFFF"/>
+                        <text x="400" y="200" 
+                              text-anchor="middle" 
+                              dominant-baseline="central"
+                              alignment-baseline="central"
+                              fill="#003366" 
+                              font-family="Montserrat, Arial, sans-serif" 
+                              font-weight="bold" 
+                              font-size="144">GENUSS</text>
+                    </svg>
+                </a>
+            </div>
+            
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li>
+                        <a href="conozcanos.html">
+                            <span class="fas fa-info-circle" aria-hidden="true"></span>
+                            <span>Conózcanos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="productos.html">
+                            <span class="fas fa-bread-slice" aria-hidden="true"></span>
+                            <span>Productos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursos.html">
+                            <span class="fas fa-graduation-cap" aria-hidden="true"></span>
+                            <span>Cursos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recetas.html">
+                            <span class="fas fa-book-open" aria-hidden="true"></span>
+                            <span>Recetas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="salud.html">
+                            <span class="fas fa-heart" aria-hidden="true"></span>
+                            <span>Línea Salud</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pedidos.html">
+                            <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+                            <span>Pedidos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="resenas.html">
+                            <span class="fas fa-star" aria-hidden="true"></span>
+                            <span>Reseñas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">
+                            <span class="fas fa-envelope" aria-hidden="true"></span>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content" role="main">
+            <section class="resenas">
+                <h1 class="section-title">Opiniones de Nuestros Clientes</h1>
+                
+                <div class="resenas-grid">
+                    <article class="resena">
+                        <div class="resena-header">
+                            <img src="Imagen/maria garcia.jpg" alt="Cliente satisfecho">
+                            <h2>María García</h2>
+                            <p class="fecha">15 de enero, 2025</p>
+                        </div>
+                        <div class="resena-content">
+                            <p>"Los mejores bretzels que he probado fuera de Alemania. El sabor y la textura son perfectos."</p>
+                        </div>
+                    </article>
+
+                    <article class="resena">
+                        <div class="resena-header">
+                            <img src="Imagen/carlos rodriguez.jpg" alt="Cliente satisfecho">
+                            <h2>Carlos Rodríguez</h2>
+                            <p class="fecha">10 de enero, 2025</p>
+                        </div>
+                        <div class="resena-content">
+                            <p>"El Stollen es increíble, me recuerda a los que probé en Múnich. Excelente servicio también."</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="formulario-container">
+                    <div class="formulario-resena">
+                        <h2>Deja tu Opinión</h2>
+                        <form action="#" method="POST" class="form-grid">
+                            <div class="form-group">
+                                <label for="nombre-resena">Nombre:</label>
+                                <input type="text" id="nombre-resena" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comentario">Tu comentario:</label>
+                                <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Enviar Reseña</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <p><small>&copy; 2025 GENUSS. Todos los derechos reservados.</small></p>
+        </footer>
+    </div>
+</body>
+</html>

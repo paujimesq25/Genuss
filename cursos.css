@@ -1,0 +1,145 @@
+/* Cursos CSS con Bootstrap - GENUSS */
+
+/* Variables personalizadas */
+:root {
+    --genuss-primary: #003366;
+    --genuss-secondary: #E3001B;
+    --genuss-background: #f8f9fa;
+    --genuss-text: #333333;
+}
+
+/* Estilos del logo */
+.brand-logo {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.brand-logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-svg {
+    width: 400px;
+    height: auto;
+    margin: 5px 0;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: white;
+    color: var(--genuss-primary);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Botones personalizados */
+.btn-genuss {
+    background-color: var(--genuss-secondary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-genuss:hover {
+    background-color: var(--genuss-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Tarjetas de cursos */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    color: var(--genuss-primary);
+    font-weight: 600;
+}
+
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--genuss-primary);
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .logo-svg {
+        max-width: 250px;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Accesibilidad */
+.btn-genuss:focus {
+    box-shadow: 0 0 0 0.25rem rgba(227, 0, 27, 0.25);
+}
+
+/* Badges y detalles */
+.nivel-principiante {
+    background-color: #28a745;
+}
+
+.nivel-intermedio {
+    background-color: #ffc107;
+}
+
+.nivel-avanzado {
+    background-color: #dc3545;
+}
+
+.detalles-curso {
+    margin: 1.5rem 0;
+}
+
+.requisito-curso {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.requisito-curso i {
+    color: var(--genuss-primary);
+}
+
+.certificacion-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    z-index: 1;
+}
