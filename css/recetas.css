@@ -1,160 +1,166 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GENUSS - Recetas</title>
-    <link rel="stylesheet" href="CSS/recetas.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    
-    <header role="banner">
-        <div class="brand-logo">
-            <a href="index.html" aria-label="GENUSS - Página principal">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="logo-svg" role="img" aria-label="Logo GENUSS">
-                    <ellipse cx="400" cy="200" rx="360" ry="160" fill="#E3001B"/>
-                    <ellipse cx="400" cy="200" rx="340" ry="140" fill="#FFFFFF"/>
-                    <text x="400" y="200" 
-                          text-anchor="middle" 
-                          dominant-baseline="central"
-                          alignment-baseline="central"
-                          fill="#003366" 
-                          font-family="Montserrat, Arial, sans-serif" 
-                          font-weight="bold" 
-                          font-size="144">GENUSS</text>
-                </svg>
-            </a>
-        </div>
-        <nav role="navigation" aria-label="Navegación principal">
-            <ul>
-                <li>
-                    <a href="conozcanos.html">
-                        <span class="fas fa-info-circle" aria-hidden="true"></span>
-                        <span>Conózcanos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="productos.html">
-                        <span class="fas fa-bread-slice" aria-hidden="true"></span>
-                        <span>Productos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="cursos.html">
-                        <span class="fas fa-graduation-cap" aria-hidden="true"></span>
-                        <span>Cursos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="recetas.html">
-                        <span class="fas fa-book-open" aria-hidden="true"></span>
-                        <span>Recetas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="salud.html">
-                        <span class="fas fa-heart" aria-hidden="true"></span>
-                        <span>Línea Salud</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="pedidos.html">
-                        <span class="fas fa-shopping-cart" aria-hidden="true"></span>
-                        <span>Pedidos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="resenas.html">
-                        <span class="fas fa-star" aria-hidden="true"></span>
-                        <span>Reseñas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html">
-                        <span class="fas fa-envelope" aria-hidden="true"></span>
-                        <span>Contacto</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+/* recetas.css */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #E3001B;
+    --text-color: #333333;
+    --background-color: #b9d6f1;
+    --white: #FFFFFF;
+}
 
-    <main id="main-content" role="main">
-        <section class="recetas">
-            <h1>Recetas Tradicionales Alemanas</h1>
-            <div class="recetas-grid">
-                <article class="receta">
-                    <img src="Imagen/Brezel_basket.jpg" alt="Receta de Bretzel">
-                    <h2>Bretzel Casero</h2>
-                    <div class="receta-info">
-                        <div class="receta-box">
-                            <h3>Ingredientes</h3>
-                            <ul>
-                                <li>500g harina de trigo</li>
-                                <li>7g levadura seca</li>
-                                <li>300ml agua tibia</li>
-                                <li>1 cucharada de sal</li>
-                                <li>2 cucharadas de mantequilla</li>
-                                <li>Bicarbonato de sodio para el baño</li>
-                                <li>Sal gruesa para decorar</li>
-                            </ul>
-                        </div>
-                        <div class="receta-box">
-                            <h3>Preparación</h3>
-                            <ol>
-                                <li>Mezclar harina, levadura y agua</li>
-                                <li>Amasar por 10 minutos</li>
-                                <li>Dejar reposar 1 hora</li>
-                                <li>Formar los bretzels</li>
-                                <li>Sumergir en solución de bicarbonato</li>
-                                <li>Hornear a 200°C por 20-25 minutos</li>
-                            </ol>
-                        </div>
-                    </div>
-                </article>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-                <article class="receta">
-                    <img src="Imagen/stollen-pan-navidad.jpg" alt="Receta de Stollen">
-                    <h2>Stollen Navideño</h2>
-                    <div class="receta-info">
-                        <div class="receta-box">
-                            <h3>Ingredientes</h3>
-                            <ul>
-                                <li>500g harina de trigo</li>
-                                <li>100g azúcar</li>
-                                <li>250g mantequilla</li>
-                                <li>200g frutas confitadas</li>
-                                <li>100g almendras molidas</li>
-                                <li>Especias navideñas</li>
-                                <li>Azúcar glas para decorar</li>
-                            </ul>
-                        </div>
-                        <div class="receta-box">
-                            <h3>Preparación</h3>
-                            <ol>
-                                <li>Mezclar ingredientes secos</li>
-                                <li>Incorporar mantequilla y frutas</li>
-                                <li>Amasar y formar</li>
-                                <li>Hornear a 180°C por 45 minutos</li>
-                                <li>Cubrir con mantequilla derretida</li>
-                                <li>Espolvorear con azúcar glas</li>
-                            </ol>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    <footer role="contentinfo">
-        <p><small>&copy; 2025 GENUSS. Todos los derechos reservados.</small></p>
-    </footer>
-</body>
-</html>
-    
-    .receta-contenido {
-        padding: 1rem;
+header {
+    background-color: var(--primary-color);
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-logo {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.brand-logo a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-svg {
+    width: 400px;
+    height: auto;
+    margin: 5px 0;
+}
+
+nav {
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: #002855;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.recetas {
+    display: grid;
+    gap: 2rem;
+}
+
+.recetas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.receta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.receta-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.receta-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.receta-box ul,
+.receta-box ol {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.receta-box li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .logo-svg {
+        width: 300px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .recetas-grid {
+        grid-template-columns: 1fr;
     }
 }
