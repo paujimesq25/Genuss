@@ -1,68 +1,158 @@
-/* Agregar al final de tu archivo recetas.css existente */
-
-/* Estilos para hacer las recetas responsivas */
-.receta {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.2s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.receta img {
-    border-radius: 8px 8px 0 0;
-    border-bottom: 3px solid var(--secondary-color);
-}
-
-.receta h2 {
-    text-align: center;
-    margin: 1rem 0;
-    color: var(--primary-color);
-}
-
-.receta-info {
-    background-color: #f8f8f8;
-    border-radius: 0 0 8px 8px;
-    padding: 1rem;
-    margin-top: auto;
-}
-
-.receta-info h3 {
-    color: var(--secondary-color);
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.8rem;
-}
-
-.receta-info ul,
-.receta-info ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.receta-info li {
-    margin-bottom: 0.5rem;
-}
-
-/* Media queries para dispositivos */
-@media (max-width: 768px) {
-    .recetas-grid {
-        grid-template-columns: 1fr;
-    }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENUSS - Recetas</title>
+    <link rel="stylesheet" href="CSS/recetas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
     
-    .receta {
-        margin-bottom: 1.5rem;
-    }
-}
+    <header role="banner">
+        <div class="brand-logo">
+            <a href="index.html" aria-label="GENUSS - Página principal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" class="logo-svg" role="img" aria-label="Logo GENUSS">
+                    <ellipse cx="400" cy="200" rx="360" ry="160" fill="#E3001B"/>
+                    <ellipse cx="400" cy="200" rx="340" ry="140" fill="#FFFFFF"/>
+                    <text x="400" y="200" 
+                          text-anchor="middle" 
+                          dominant-baseline="central"
+                          alignment-baseline="central"
+                          fill="#003366" 
+                          font-family="Montserrat, Arial, sans-serif" 
+                          font-weight="bold" 
+                          font-size="144">GENUSS</text>
+                </svg>
+            </a>
+        </div>
+        <nav role="navigation" aria-label="Navegación principal">
+            <ul>
+                <li>
+                    <a href="conozcanos.html">
+                        <span class="fas fa-info-circle" aria-hidden="true"></span>
+                        <span>Conózcanos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="productos.html">
+                        <span class="fas fa-bread-slice" aria-hidden="true"></span>
+                        <span>Productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cursos.html">
+                        <span class="fas fa-graduation-cap" aria-hidden="true"></span>
+                        <span>Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recetas.html">
+                        <span class="fas fa-book-open" aria-hidden="true"></span>
+                        <span>Recetas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="salud.html">
+                        <span class="fas fa-heart" aria-hidden="true"></span>
+                        <span>Línea Salud</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="pedidos.html">
+                        <span class="fas fa-shopping-cart" aria-hidden="true"></span>
+                        <span>Pedidos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="resenas.html">
+                        <span class="fas fa-star" aria-hidden="true"></span>
+                        <span>Reseñas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html">
+                        <span class="fas fa-envelope" aria-hidden="true"></span>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-@media (min-width: 769px) {
-    .recetas-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
+    <main id="main-content" role="main">
+        <section class="recetas">
+            <h1>Recetas Tradicionales Alemanas</h1>
+            <div class="recetas-grid">
+                <article class="receta">
+                    <img src="Imagen/Brezel_basket.jpg" alt="Receta de Bretzel">
+                    <h2>Bretzel Casero</h2>
+                    <div class="receta-info">
+                        <div class="receta-box">
+                            <h3>Ingredientes</h3>
+                            <ul>
+                                <li>500g harina de trigo</li>
+                                <li>7g levadura seca</li>
+                                <li>300ml agua tibia</li>
+                                <li>1 cucharada de sal</li>
+                                <li>2 cucharadas de mantequilla</li>
+                                <li>Bicarbonato de sodio para el baño</li>
+                                <li>Sal gruesa para decorar</li>
+                            </ul>
+                        </div>
+                        <div class="receta-box">
+                            <h3>Preparación</h3>
+                            <ol>
+                                <li>Mezclar harina, levadura y agua</li>
+                                <li>Amasar por 10 minutos</li>
+                                <li>Dejar reposar 1 hora</li>
+                                <li>Formar los bretzels</li>
+                                <li>Sumergir en solución de bicarbonato</li>
+                                <li>Hornear a 200°C por 20-25 minutos</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="receta">
+                    <img src="Imagen/stollen-pan-navidad.jpg" alt="Receta de Stollen">
+                    <h2>Stollen Navideño</h2>
+                    <div class="receta-info">
+                        <div class="receta-box">
+                            <h3>Ingredientes</h3>
+                            <ul>
+                                <li>500g harina de trigo</li>
+                                <li>100g azúcar</li>
+                                <li>250g mantequilla</li>
+                                <li>200g frutas confitadas</li>
+                                <li>100g almendras molidas</li>
+                                <li>Especias navideñas</li>
+                                <li>Azúcar glas para decorar</li>
+                            </ul>
+                        </div>
+                        <div class="receta-box">
+                            <h3>Preparación</h3>
+                            <ol>
+                                <li>Mezclar ingredientes secos</li>
+                                <li>Incorporar mantequilla y frutas</li>
+                                <li>Amasar y formar</li>
+                                <li>Hornear a 180°C por 45 minutos</li>
+                                <li>Cubrir con mantequilla derretida</li>
+                                <li>Espolvorear con azúcar glas</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p><small>&copy; 2025 GENUSS. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>
     
     .receta-contenido {
         padding: 1rem;
