@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -49,7 +49,7 @@ body {
 /* Header y Logo */
 header {
     background-color: var(--primary-color);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,13 +70,13 @@ header {
 }
 
 /* Navegación Principal */
-nav[role="navigation"] {
-    background-color: var(--primary-color);
-    padding: 1rem 0;
-    margin-top: 1rem;
+nav {
+    text-align: center;
+    padding: 0.8rem 0;
+    background-color: #002855;
 }
 
-nav[role="navigation"] ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -86,34 +86,20 @@ nav[role="navigation"] ul {
     flex-wrap: wrap;
 }
 
-nav[role="navigation"] li {
-    margin: 0;
-    padding: 0;
-}
-
-nav[role="navigation"] a {
+nav a {
     color: var(--white);
     text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
 }
 
-nav[role="navigation"] a span {
-    display: inline-block;
-}
-
-nav[role="navigation"] a .fas,
-nav[role="navigation"] a span:last-child {
-    color: var(--white);
-}
-
-nav[role="navigation"] a:hover {
+nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
 }
 
 /* Estilos para títulos */
@@ -245,13 +231,13 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    nav[role="navigation"] ul {
+    nav ul {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
 
-    nav[role="navigation"] a {
+    nav a {
         width: 100%;
         justify-content: center;
     }
