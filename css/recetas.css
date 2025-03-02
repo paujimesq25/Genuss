@@ -98,3 +98,18 @@ main {
     border-radius: 8px;
     margin-bottom: 1rem;
 }
+/* Agregar aquí los nuevos estilos */
+.receta-info ul, 
+.receta-info ol {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+}
+
+/* Para dispositivos móviles, puedes ajustar el margen */
+@media (max-width: 768px) {
+    .receta-info ul, 
+    .receta-info ol {
+        margin-left: 1rem;
+        padding-left: 0.5rem;
+    }
+}
