@@ -180,6 +180,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo-svg {
+        width: 300px;
+    }
+    
     .contacto-grid {
         grid-template-columns: 1fr;
     }
