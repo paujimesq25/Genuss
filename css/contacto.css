@@ -1,94 +1,18 @@
-/* contacto.css */
-:root {
-    --primary-color: #003366;
-    --secondary-color: #E3001B;
-    --text-color: #333333;
-    --background-color: #b9d6f1;
-    --white: #FFFFFF;
-}
+/* contacto.css - Estilos específicos para la página de contacto */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Todos los estilos base como variables, reset, header, footer, navegación, etc.
+   ya están definidos en base.css, así que solo definimos lo específico a esta página */
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    background-color: var(--primary-color);
-    padding: 0.5rem 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.brand-logo {
-    text-align: center;
-    padding: 0.5rem 0;
-    background-color: var(--background-color);
-}
-
-.brand-logo a {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.logo-svg {
-    width: 400px;
-    height: auto;
-    margin: 5px 0;
-}
-
-nav {
-    text-align: center;
-    padding: 0.8rem 0;
-    background-color: #002855;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-main {
-    flex: 1;
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.contacto {
+   .contacto {
     display: grid;
     gap: 2rem;
+}
+
+.contacto h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .contacto-grid {
@@ -155,54 +79,9 @@ textarea {
     margin-top: 1.5rem;
 }
 
-h1, h2, h3 {
-    color: var(--primary-color);
-}
-
-.contacto h1 {
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--white);
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-}
-
+/* Media queries específicas para contacto */
 @media (max-width: 768px) {
-    .logo-svg {
-        width: 300px;
-    }
-    
     .contacto-grid {
         grid-template-columns: 1fr;
-    }
-
-    .nav-top ul, .nav-bottom ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
     }
 }
