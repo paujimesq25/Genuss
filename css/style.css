@@ -168,6 +168,10 @@ main {
 }
 
 @media (max-width: 768px) {
+    .logo-svg {
+        width: 300px;
+    }
+    
     .enlaces-grid {
         grid-template-columns: 1fr;
     }
