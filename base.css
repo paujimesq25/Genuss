@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -46,7 +46,7 @@ body {
     top: 0;
 }
 
-/* Header y Logo - Formato de salud.css */
+/* Header y Logo */
 header {
     background-color: var(--primary-color);
     padding: 0.5rem 0;
@@ -69,7 +69,7 @@ header {
     margin: 5px 0;
 }
 
-/* Navegación Principal - Formato de salud.css */
+/* Navegación Principal */
 nav {
     text-align: center;
     padding: 0.8rem 0;
@@ -102,7 +102,7 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Estilos para títulos - Actualizar h1 según salud.css */
+/* Estilos para títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     font-weight: 600;
@@ -113,8 +113,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 h2 {
@@ -223,7 +221,7 @@ footer p {
     margin: 0;
 }
 
-/* Media Queries - Actualizado según salud.css */
+/* Media Queries */
 @media (max-width: 768px) {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
@@ -236,6 +234,7 @@ footer p {
     nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 
     nav a {
