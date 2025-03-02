@@ -32,6 +32,7 @@ header {
 .brand-logo {
     text-align: center;
     padding: 0.5rem 0;
+    background-color: var(--background-color);
 }
 
 .brand-logo a {
@@ -45,13 +46,13 @@ header {
     margin: 5px 0;
 }
 
-.nav-top, .nav-bottom {
+nav {
     text-align: center;
     padding: 0.8rem 0;
     background-color: #002855;
 }
 
-.nav-top ul, .nav-bottom ul {
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -61,16 +62,19 @@ header {
     flex-wrap: wrap;
 }
 
-.nav-top a, .nav-bottom a {
+nav a {
     color: var(--white);
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.nav-top a:hover, .nav-bottom a:hover {
+nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -155,10 +159,11 @@ h1, h2, h3 {
     color: var(--primary-color);
 }
 
-h1 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+.contacto h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 h2 {
